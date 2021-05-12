@@ -178,6 +178,48 @@ body {
   right: -6px;
 }
 
+footer {
+  height: 100vh;
+  margin-top: 50px;
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+footer form {
+  padding-top: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer form input {
+  padding: 0 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  margin: 0 20px;
+}
+
+footer form button {
+  padding: 3px 50px;
+  border: none;
+  background-color: #F58656;
+  color: white;
+  border-radius: 30px;
+}
+
+footer form button i {
+  margin-left: 25%;
+}
+
+footer .partTwo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .f-4 {
   font-weight: 400;
 }

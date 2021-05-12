@@ -7,6 +7,10 @@ body {
   margin: 30px 0;
 }
 
+ul {
+  list-style: none;
+}
+
 #hero {
   height: 130vh;
   background-image: url(../images/hero_pizza.png);
@@ -143,7 +147,7 @@ body {
 
 #popular .cart-field {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 2%;
 }
 
@@ -155,6 +159,7 @@ body {
   -webkit-box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
           box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
   position: relative;
+  margin: 0 auto;
 }
 
 #popular .cart-field .cart-button i {
@@ -199,6 +204,7 @@ footer form input {
   outline: none;
   border: none;
   margin: 0 20px;
+  height: 50px;
 }
 
 footer form button {
@@ -207,6 +213,7 @@ footer form button {
   background-color: #F58656;
   color: white;
   border-radius: 30px;
+  height: 50px;
 }
 
 footer form button i {
@@ -218,6 +225,35 @@ footer .partTwo {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.basketItem {
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  right: 50%;
+  bottom: -15px;
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #ECEEF6;
+  padding-left: 3px;
+}
+
+.basketItem .item-img {
+  width: 38%;
+}
+
+.basketItem .item-img img {
+  width: 100%;
+}
+
+.basketItem ul {
+  padding: 0;
+  border-bottom: 1px solid #ECEEF6;
 }
 
 .f-4 {

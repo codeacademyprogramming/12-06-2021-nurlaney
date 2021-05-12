@@ -1,0 +1,24 @@
+.basketItem {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    right: 50%;
+    bottom: -15px;
+    box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #ECEEF6;
+    padding-left: 3px;
+    .item-img {
+        width: 38%;
+        img {
+            width: 100%;
+        }
+    }
+    ul {
+        padding: 0;
+        border-bottom: 1px solid #ECEEF6;
+    }
+}

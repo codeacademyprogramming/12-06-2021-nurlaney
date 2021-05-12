@@ -3,6 +3,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.section-header {
+  margin: 30px 0;
+}
+
 #hero {
   height: 130vh;
   background-image: url(../images/hero_pizza.png);
@@ -35,8 +39,32 @@ body {
   border-radius: 15px;
   padding: 10px;
   padding: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   position: relative;
+}
+
+#popular .pizza-box .select-size {
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(255, 254, 254, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+#popular .pizza-box .select-size input {
+  margin: 10px 0;
+  margin-right: 5px;
+}
+
+#popular .pizza-box .select-size .add-to-basket {
+  background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+  border-radius: 3px;
+  border: none;
+  padding: 5px 35px;
+  color: white;
+  margin-top: 25px;
 }
 
 #popular .pizza-box .img-part {
@@ -78,7 +106,7 @@ body {
   padding: 21px;
   border-radius: 97%;
   position: absolute;
-  left: 41%;
+  left: 35%;
   bottom: -5%;
   border-bottom: 1px solid #ECEEF6;
 }

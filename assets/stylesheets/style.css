@@ -34,6 +34,10 @@ body {
   color: #000000;
 }
 
+#popular {
+  position: relative;
+}
+
 #popular .pizza-box {
   border: 1px solid #ECEEF6;
   border-radius: 15px;
@@ -135,6 +139,43 @@ body {
 
 #popular .pizza-box .round .icon-wrapper:hover i {
   color: white;
+}
+
+#popular .cart-field {
+  position: absolute;
+  right: 10%;
+  top: 2%;
+}
+
+#popular .cart-field .cart-button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+  position: relative;
+}
+
+#popular .cart-field .cart-button i {
+  color: #F58656;
+  font-size: 30px;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+
+#popular .cart-field .cart-button .count {
+  position: absolute;
+  padding: 5px;
+  background: #f58656;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-weight: 700;
+  bottom: -6px;
+  right: -6px;
 }
 
 .f-4 {

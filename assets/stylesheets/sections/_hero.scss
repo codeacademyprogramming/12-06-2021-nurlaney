@@ -1,0 +1,11 @@
+#hero {
+    height: 130vh;
+    background-image: url(../images/hero_pizza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .hero-content {
+        text-align: center;
+        padding-top: 10rem;
+    }
+}

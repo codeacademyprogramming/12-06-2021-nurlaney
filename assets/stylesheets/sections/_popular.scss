@@ -1,0 +1,69 @@
+#popular {
+    .pizza-box {
+        border: 1px solid #ECEEF6;
+        border-radius: 15px;
+        padding: 10px;
+        padding: 10px;
+        margin-bottom: 25px;
+        position: relative;
+        .img-part {
+            width: 100%;
+            margin-left: 22px;
+            img {
+                width: 100%;
+            }
+        }
+        .box-body {
+            p {
+                font-size: 14px;
+                padding-top: 5px;
+            }
+            span {
+                font-size: 14px;
+            }
+            .box-title {
+                font-size: 16px;
+            }
+            h3 {
+                color: $dark-blue;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+        }
+        &::after {
+            content: ' ';
+            width: 50px;
+            height: 50px;
+        }
+        .round {
+            background-color: white;
+            padding: 21px;
+            border-radius: 97%;
+            position: absolute;
+            left: 41%;
+            bottom: -5%;
+            border-bottom: 1px solid #ECEEF6;
+            i {
+                position: absolute;
+                top: 6px;
+                left: 8px;
+                color: #F58656;
+            }
+            .icon-wrapper {
+                padding: 15px;
+                border: 1px solid #ECEEF6;
+                position: relative;
+                border-radius: 50%;
+                top: 11px;
+                transition: all 0.5s;
+                cursor: pointer;
+                &:hover {
+                    background-color: #F58656;
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

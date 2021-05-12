@@ -1,0 +1,7 @@
+@mixin font-wheights {
+    @for $i from 4 through 7 {
+        .f-#{$i} {
+            font-weight: #{$i}#{0}#{0};
+        }
+    }
+}

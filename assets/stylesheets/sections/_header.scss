@@ -1,0 +1,15 @@
+#header {
+    position: absolute;
+    right: 0;
+    left: 0;
+    nav {
+        background-color: transparent;
+        ul {
+            li {
+                a {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

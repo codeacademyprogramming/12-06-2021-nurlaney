@@ -50,11 +50,13 @@ class Items {
                 });
                 document.querySelectorAll("#add-to-basket").forEach((el, idx) => {
                     el.addEventListener("click", function() {
+                        document.querySelectorAll("#size-wrapper")[idx].classList.add("d-none");
                         document.querySelectorAll('#size-input').forEach((input, i) => {
                             if (input.checked) {
                                 let size = input.getAttribute('data-key');
                                 let locals = localStorage.getItem('PIZZA') ? JSON.parse(localStorage.getItem('PIZZA')) : [];
-                                let data = { name: res[idx].name, size: size, price: res[idx].price };
+                                let subtotal = localStorage.getItem('PIZZA') ? JSON.parse(localStorage.getItem('PIZZA')).reduce((calc, arr) => calc += arr.price, 0) : res[idx].price;
+                                let data = { name: res[idx].name, size: size, price: res[idx].price, subtotal: subtotal };
                                 locals.push(data);
                                 localStorage.setItem('PIZZA', JSON.stringify(locals));
                             } else {
